@@ -179,6 +179,7 @@ a:active {
 .about-box:nth-child(2) {
     text-align: center;
 }
+
 /******PROJECTS SECTION******/
 #projects-section .group {
     text-align: center;
@@ -194,8 +195,10 @@ a:active {
 
 /******CONTACT SECTION******/
 #contact-section img {
-    /* width: 300px; */
     border-radius: 10px;
+}
+
+.contact-pic {
     margin: 10px auto;
 }
 
@@ -203,7 +206,7 @@ a:active {
     border: 1px solid #333339;
     border-radius: 10px;
     padding: 15px;
-    width: 80%;
+    width: 70%;
     margin: 10px auto;
 }
 
@@ -259,3 +262,101 @@ footer {
 .footer-container ul li {
     text-decoration: none;
 }
+
+/*******PROJECT PAGES*******/
+#project-main-pic {
+    margin-bottom: 10px;
+}
+
+.project-page h3 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.detail-pic, 
+.skills-pic {
+    margin: 10px auto;
+}
+
+/* .detail-group {
+    justify-content: center;
+} */
+
+.detail-box {
+    background-color: #99c3c7;
+    color: #333339;
+    width: 70%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.detail-box p {
+    margin-bottom: 7px;
+}
+
+.skills-box {
+    background-color: #d39672;
+    color: #333339;
+    width: 70%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.screenshots {
+    margin: 10px auto;
+}
+
+/*******MEDIA QUERIES*******/
+@media all and (min-width: 750px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        margin: 15px 0;
+    }
+
+    header nav {
+        margin-top: 40px;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+
+    .profile-box {
+        margin: 10px;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile-pic img {
+        width: 70%;
+    }
+
+    #profile-pic {
+        margin: 10px 0 10px 30px;
+        padding: 0;
+    }
+
+    .about-box {
+        margin: 5px;
+    }
+
+    #contact-section img {
+        width: 300px;
+    }
+
+    .contact-container {
+        margin: 10px;
+    }
+
+    #project-main-pic {
+        width: 400px;
+        margin: 20px auto;
+    }
+}
+
