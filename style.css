@@ -1,0 +1,261 @@
+/******PORTFOLIO 3******/
+/*
+GOOGLE FONTS
+font-family: 'Permanent Marker', cursive, Georgia, 'Times New Roman', serif; Regular 400
+font-family: 'Roboto', sans-serif, Arial, Helvetica; Thin 100, Regular 400
+
+COLORS
+Snow Drift (white): #f7f9f8
+Shadow Green (teal): #99c3c7
+Cinnabar (pink/red): #eb4b40
+Whiskey (brown): #d39672
+Tuna (dark gray): #333339
+*/
+
+/******BASE SETUP******/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 10px 0;
+    padding-top: 5px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.item {
+    flex: 1;
+}
+
+.item-double {
+    flex: 2;
+}
+
+h1,
+h2 {
+    font-family: 'Permanent Marker', cursive, Georgia, 'Times New Roman', serif;
+}
+
+section h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    color: #333339;
+}
+
+hr {
+    width: 35%;
+    margin: 0 auto 10px auto;
+    color: #99c3c7;
+    background-color: #99c3c7;
+    height: 3px;
+}
+
+/******HEADER******/
+header {
+    background-color: #333339;
+    color: #f7f9f8;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f7f9f8;
+    margin: 0 20px 0 0;
+}
+
+a:link,
+a:visited {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    color: #f7f9f8;
+    font-size: 21px;
+}
+
+a:visited {
+    columns: #d39672;
+}
+
+a:hover,
+a:active {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    color: #99c3c7;
+    font-size: 21px;
+    border-bottom: 2px solid #eb4b40;
+}
+
+a:active {
+    color: #0000ff;
+}
+
+/******INTRO SECTION******/
+#profile-pic {
+    width: 300px;
+    margin: 10px auto;
+}
+
+#profile-pic img {
+    border-radius: 50%;
+}
+
+#intro-box {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#intro-box p {
+    margin-bottom: 5px;
+}
+
+/******ABOUT SECTION******/
+#about-section {
+    background-image: url(img/tech-bg.jpg);
+    background-size: cover;
+}
+
+#about-section h2 {
+    color: #f7f9f8;
+}
+
+.about-box {
+    color: #333339;
+    background-color: hsla(150, 14%, 97%, 0.7);
+    padding: 15px;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.about-box h3 {
+    text-align: center;
+    margin: 5px auto;
+    border-bottom: 2px solid #0000ff;
+}
+
+.about-box ul {
+    list-style: none;
+}
+
+.about-box ul li {
+    margin-bottom: 5px;
+}
+
+.about-box ion-icon {
+    font-size: 120%;
+    margin-right: 5px;
+    color: #046404;
+}
+
+.about-box:nth-child(2) {
+    text-align: center;
+}
+/******PROJECTS SECTION******/
+#projects-section .group {
+    text-align: center;
+}
+
+#projects-section img {
+    width: 300px;
+}
+
+#projects-section a:active {
+    border-bottom: 2px solid #0000ff;
+}
+
+/******CONTACT SECTION******/
+#contact-section img {
+    /* width: 300px; */
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+#contact-section form {
+    border: 1px solid #333339;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#contact-section textarea,
+#contact-section input[type=text],
+#contact-section input[type=email] {
+    width: 100%;
+}
+
+#contact-section form label {
+    display: block;
+}
+
+#contact-section form p {
+    margin-bottom: 7px;
+}
+
+#contact-section button {
+    padding: 10px 20px;
+    background-color: #99c3c7;
+    color: #333339;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/******FOOTER******/
+footer {
+    background-color: #333339;
+    color: #f7f9f8;
+    padding: 15px;
+}
+
+.footer-container {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.footer-container p {
+    margin-bottom: 5px;
+}
+
+.footer-container ion-icon {
+    font-size: 120%;
+    margin-right: 5px;
+    color: #f7f9f8;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container ul li {
+    text-decoration: none;
+}
