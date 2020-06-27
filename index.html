@@ -15,7 +15,7 @@
         <h1>Miguel's Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>                    
+                <li><a href="index.html">Home</a></li>                    
                 <li><a href="#about-section">About Me</a></li>
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#contact-section">Contact</a></li>
@@ -34,6 +34,7 @@
                 <div class="item" id="intro-box">
                     <p>Hi!  My name is Miguel Ramos and I am a Full Stack Software Developer located in Vancouver WA... <u>NOT CANADA</u>!</p>
                     <p>Driven and mission-focused developer with a passion for creating positive &amp; beneficial User Experiences combined with a unique skillset</p>
+                    <p>I am eager to collaborate with and learn from positive and creative people</p>
                 </div>
             </div> <!--end of group-->
         </section> <!--end of intro section-->
@@ -54,8 +55,28 @@
                     </ul>
                 </div>
                 <div class="item about-box">
-                    <h3>Skills</h3>
-                    <ul>
+                    <h3>Skills &amp; Services</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>HTML5</td>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>CSS3</td>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>JQuery</td>
+                            </tr>
+                            <tr>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>Materialize</td>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>Node.js</td>
+                            </tr>
+                            <tr>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>Bootstrap</td>
+                                <td><ion-icon name="checkmark-circle-outline"></ion-icon>More Coming Soon!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <ul>
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>HTML5</li>
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>CSS3</li>
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>Materialize</li>
@@ -63,6 +84,11 @@
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>JavaScript</li>
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>JQuery</li>
                         <li><ion-icon name="checkmark-circle-outline"></ion-icon>Node.js</li>
+                    </ul> -->
+                    <ul>
+                        <li><ion-icon name="thumbs-up-outline"></ion-icon>UI &amp; UX Design</li>
+                        <li><ion-icon name="thumbs-up-outline"></ion-icon>Front End Development</li>
+                        <li><ion-icon name="thumbs-up-outline"></ion-icon>Back End Development</li>
                     </ul>
                 </div>
                 <div class="item about-box">
@@ -82,7 +108,14 @@
             <h2>PROJECTS</h2>
             <hr>
             <div class="group">
-                <div class="item"><a href="project1.html"><img src="img/project-construction.png" alt="project under construction"> </a></div>
+                <div class="item card">
+                    <a href="project1.html"><img src="img/project-construction.png" alt="project under construction"></a>
+                    <div class="card-details">
+                        <h3>Project 1</h3>
+                        <p>project short description</p>
+                        <a href="project1.html"><i>more details here</i></a>
+                    </div> <!--end of card details-->
+                </div> <!--end of card-->
                 <div class="item">Project2</div>
             </div> <!-- end of group-->
             <div class="group">
@@ -97,7 +130,7 @@
             <hr>
             <div class="group contact-container">
                 <div class="item-double">
-                    <form action="#" method="POST">
+                    <form action="https://formspree.io/xknqvjdb" method="POST">
                         <p>
                             <label for="name">Name: </label>
                             <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
