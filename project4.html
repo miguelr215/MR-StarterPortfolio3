@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Miguel's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <section class="project-detail">
+            <h2>Project Title</h2>
+            <hr>
+            <div id="project-main-pic">
+                <img src="img/project-construction.png" alt="project under construction">
+            </div>
+            <h3>Project Details</h3>
+            <hr>
+            <div class="group detail-group">
+                <div class="item detail-pic">
+                    <img src="img/idea.png" alt="idea light bulb">
+                </div>
+                <div class="item-double detail-box">
+                    <h3>What does it do?</h3>
+                    <p>details</p>
+                    <h3>Target Audience</h3>
+                    <p>details</p>
+                    <h3>Why build it?</h3>
+                    <p>details</p>
+                    <h3>GitHub Repo</h3>
+                    <h3>Link to app</h3>
+                </div> <!--end of detail box-->
+            </div> <!--end of group-->
+            <div class="group">
+                <div class="item skills-pic">
+                    <img src="img/skills.png" alt="programming list of skills">
+                </div>
+                <div class="item-double skills-box">
+                    <h3>Skills Used</h3>
+                    <p>skills</p>
+                    <p>skills</p>
+                    <p>skills</p>
+                    <p>explanation or verbal description</p>
+                </div> <!--end of skills box-->
+            </div> <!--end of group-->
+        </section> <!--end of project-detail-->
+
+        <section>
+            <h3>Screenshots</h3>
+            <hr>
+            <div class="group">
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+            </div>
+
+            <div class="group">
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+                <div class="item screenshots"><img src="img/sample.png" alt="sample pic"></div>
+            </div>
+
+        </section> <!--end of screenshots-->
+
+        <section id="contact-section">
+            <h2>CONTACT</h2>
+            <hr>
+            <div class="group">
+                <div class="item-double">
+                    <form action="https://formspree.io/xknqvjdb" method="POST">
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone: </label>
+                            <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        </p>
+                        <p>
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" cols="30" rows="4" placeholder="What would you like to discuss?"></textarea>
+                        </p>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div> <!--end of form div-->
+                <div class="item contact-pic">
+                    <img src="img/phone.png" alt="phone to call me">
+                </div> <!--end of form pic-->
+
+            </div> <!--end of group-->
+
+        </section> <!--end of contact section-->
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p><u>Connect with me!</u></p>
+            <ul>
+                <li><ion-icon name="logo-linkedin"></ion-icon> Connect on <a href="https://www.linkedin.com/in/miguel-ramos-7bb9b23/" target="_blank">LinkedIn</a></li>
+                <li><ion-icon name="logo-github"></ion-icon> Check out my <a href="https://github.com/miguelr215" target="_blank">GitHub</a></li>
+                <li><ion-icon name="mail-outline"></ion-icon>Email me <a href="mailto:drexelramos@gmail.com" target="_blank">here</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    
+    <!--script for icons-->
+    <script src="https://unpkg.com/ionicons@5.1.0/dist/ionicons.js"></script>
+</body>
+</html>
